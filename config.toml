@@ -1,0 +1,77 @@
+# Note: When running locally with `hugo server`, Hugo overrides baseURL automatically,
+# or you can temporarily set baseURL = "/" if building static files for root hosting.
+baseURL = "https://catminh110.github.io/fcj-caotrancatminh-workshop/"
+relativeURLs = false
+canonifyURLs = false
+defaultContentLanguage = "en"
+copyright = "Copyright © 2026 Cao Trần Cát Minh"
+
+# Change the default theme to be used when building the site with Hugo
+theme = "hugo-theme-learn"
+
+# For search functionality
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  # Change default color scheme with a variant one. Can be "red", "blue", "green", "workshop".
+  themeVariant = "workshop"
+  # GitHub repo edit link
+  editURL = "https://github.com/catminh110/fcj-caotrancatminh-workshop/edit/main/content/"
+  description = "AWS Cloud Workshop & First Cloud AI Journey Portfolio - Cao Trần Cát Minh"
+  author = "Cao Trần Cát Minh"
+  showVisitedLinks = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+
+[Languages]
+  [Languages.en]
+    title = "AWS Cloud Workshop - Cao Tran Cat Minh"
+    weight = 1
+    languageName = "English"
+
+    [[Languages.en.menu.shortcuts]]
+      name = "<i class='fab fa-github'></i> GitHub Repository"
+      identifier = "GitHub Repo"
+      url = "https://github.com/catminh110/fcj-caotrancatminh-workshop"
+      weight = 10
+
+    [[Languages.en.menu.shortcuts]]
+      name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
+      identifier = "AWS Study Group"
+      url = "https://awsstudygroup.com"
+      weight = 20
+
+    [[Languages.en.menu.shortcuts]]
+      name = "<i class='fab fa-facebook'></i> AWS Study Group - FB Group"
+      identifier = "AWS Study Group FB"
+      url = "https://www.facebook.com/groups/awsstudygroupfcj"
+      weight = 30
+
+  [Languages.vi]
+    title = "AWS Cloud Workshop - Cao Trần Cát Minh"
+    weight = 2
+    languageName = "Tiếng Việt"
+
+    [[Languages.vi.menu.shortcuts]]
+      name = "<i class='fab fa-github'></i> GitHub Repository"
+      identifier = "GitHub Repo"
+      url = "https://github.com/catminh110/fcj-caotrancatminh-workshop"
+      weight = 10
+
+    [[Languages.vi.menu.shortcuts]]
+      name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
+      identifier = "AWS Study Group"
+      url = "https://awsstudygroup.com"
+      weight = 20
+
+    [[Languages.vi.menu.shortcuts]]
+      name = "<i class='fab fa-facebook'></i> AWS Study Group - Nhóm FB"
+      identifier = "AWS Study Group FB"
+      url = "https://www.facebook.com/groups/awsstudygroupfcj"
+      weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
